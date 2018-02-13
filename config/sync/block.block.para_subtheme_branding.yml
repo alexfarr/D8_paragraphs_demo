@@ -1,0 +1,25 @@
+uuid: ed24400e-670f-427f-9bde-9115c0b9687d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - para_subtheme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: para_subtheme_branding
+theme: para_subtheme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

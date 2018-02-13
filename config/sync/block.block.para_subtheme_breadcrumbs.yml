@@ -1,0 +1,22 @@
+uuid: a7903330-4fcc-4a23-b016-bc0f7ce09cfc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - para_subtheme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: para_subtheme_breadcrumbs
+theme: para_subtheme
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

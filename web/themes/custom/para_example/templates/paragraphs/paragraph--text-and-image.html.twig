@@ -41,16 +41,18 @@
 {%
     set classes = [
     'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    'row'
 ]
 %}
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
-        HI MOM!
-        {{ kint }}
+        {{  content.field_paragraphs_title }}
         {% block content %}
-            {{ content }}
+            {% for key,field in content if key != 'field_paragraphs_title' %}
+                <div class="col-md-6">
+                    {{ field }}
+                </div>
+            {% endfor %}
         {% endblock %}
     </div>
 {% endblock paragraph %}
